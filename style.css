@@ -1,0 +1,50 @@
+/* Mobile First Design */
+
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+/* Variables */
+
+:root {
+    /* Colors */
+    /* Primary, Text */
+    --color-dark-blue: hsl(238, 29%, 16%);
+    --color-soft-red: hsl(14, 88%, 65%);
+
+    /* Background Gradient */
+    --bg-gradient: linear-gradient(180deg, hsl(273, 75%, 66%), 0%, hsl(240, 73%, 65%), 100%);
+
+    /* Font Weights */
+    --weight-regular: 400;
+    --weight-bold: 700;
+
+    /* Neutral, Text */
+    --color-dark-gray-blue: hsl(237, 12%, 33%);
+    --color-mid-dark-gray-blue: hsl(240, 6%, 50%);
+
+    /* Dividers */
+    --color-light-gray-blue: hsl(240, 5%, 91%);
+
+   /* --transition: 300ms ease-in-out; */
+}
+
+* {
+    box-sizing: border-box;
+    outline: 1px black solid;
+}
+
+
+
+
+
+
+
+/* Footer */
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}

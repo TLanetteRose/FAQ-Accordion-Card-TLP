@@ -6,6 +6,7 @@
 
 :root {
     /* Colors */
+    --color-white: hsl(0, 100%, 100%);
     /* Primary, Text */
     --color-dark-blue: hsl(238, 29%, 16%);
     --color-soft-red: hsl(14, 88%, 65%);

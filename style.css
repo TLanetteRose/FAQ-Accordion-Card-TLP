@@ -40,7 +40,7 @@ html {
 }
 
 html, body  {
-    height: 100%;
+    height: 100vh;
 }
 
 h1, 
@@ -52,29 +52,54 @@ p {
 
 body {
     margin: 0;
-    padding: 0;
     font-size: 1.5rem;
     font-family: 'Kumbh Sans',
     sans-serif;
     background: var(--bg-gradient);
 }
 
-.container {
+.main {
     margin: auto;
-    padding: auto;
+    padding-top: 150px;
+    padding-bottom: 0;
     min-width: 375px;
     max-width: 780px;
     height: 100vh;
 }
 
-.accordion {
-    height: 643px;
-    width: 375px;
-    margin: auto;
+.faq-container {
+   background-color: var(--color-white);
+   width: 375px;
+   height: 530px;
+   margin: auto;
+
 }
 
+.accordion {
+    background-color: #eeeeee;
+    color: #444444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+}
 
+/* Adds a background color to the button if it is clicked on when you hover (active class w/JS) */
 
+.active, .accordion:hover {
+    background-color: #cccccc;
+}
+
+/* Style accordion panel which is hidden by default */
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+}
 
 
 

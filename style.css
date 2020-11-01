@@ -11,7 +11,7 @@
     --color-soft-red: hsl(14, 88%, 65%);
 
     /* Background Gradient */
-    --bg-gradient: linear-gradient(180deg, hsl(273, 75%, 66%), 0%, hsl(240, 73%, 65%), 100%);
+    --bg-gradient: linear-gradient(180deg, hsl(273, 75%, 66%) 0%, hsl(240, 73%, 65%) 100%);
 
     /* Font Weights */
     --weight-regular: 400;
@@ -27,9 +27,49 @@
    /* --transition: 300ms ease-in-out; */
 }
 
-* {
+/* Reset */
+html {
     box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
     outline: 1px black solid;
+}
+
+html, body  {
+    height: 100%;
+}
+
+h1, 
+h2, 
+h3, 
+p {
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 1.5rem;
+    font-family: 'Kumbh Sans',
+    sans-serif;
+    background: var(--bg-gradient);
+}
+
+.container {
+    margin: auto;
+    padding: auto;
+    min-width: 375px;
+    max-width: 780px;
+    height: 100vh;
+}
+
+.accordion {
+    height: 643px;
+    width: 375px;
+    margin: auto;
 }
 
 

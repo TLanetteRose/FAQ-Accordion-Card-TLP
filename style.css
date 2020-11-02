@@ -61,18 +61,20 @@ body {
 .main {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    margin: auto;
-    min-width: 375px;
-    max-width: 780px;
-    height: 100vh;
+    justify-content: center;
+    padding: 4rem 2.4rem 8.5rem;
+    height: 100%;
 }
 
 .faq-container {
+   height: 100%;
+   display: flex;
+   max-width: 56rem;
+   position: relative;
+   align-items: center;
+   flex-flow: column nowrap;
    background-color: var(--color-white);
-   width: 375px;
-   height: 530px;
-   margin: auto;
+
 
 }
 
@@ -81,8 +83,6 @@ body {
 }
 
 .accordion {
-    background-color: #eeeeee;
-    color: #444444;
     cursor: pointer;
     padding: 18px;
     width: 100%;
@@ -92,6 +92,20 @@ body {
     transition: 0.4s;
 }
 
+
+.faq__heading {
+    font-size: 3.2rem;
+    line-height: 3.8rem;
+    color: var(--color-dark-blue);
+    font-weight: var(--weight-bold);
+}
+
+.question-title {
+    font-size: 1.3rem;
+    line-height: 1.6rem;
+    font-weight: var(--weight-regular);
+    color: var(--color-mid-dark-gray-blue);
+}
 /* Adds a background color to the button if it is clicked on when you hover (active class w/JS) */
 
 .active, .accordion:hover {
@@ -99,7 +113,7 @@ body {
 }
 
 /* Style accordion panel which is hidden by default */
-.panel {
+.answer-panel {
     padding: 0 18px;
     background-color: white;
     display: none;

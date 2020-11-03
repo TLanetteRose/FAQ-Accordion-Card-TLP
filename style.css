@@ -66,46 +66,7 @@ body {
     height: 100%;
 }
 
-.faq-container {
-   height: 100%;
-   display: flex;
-   max-width: 56rem;
-   position: relative;
-   align-items: center;
-   flex-flow: column nowrap;
-   background-color: var(--color-white);
 
-
-}
-
-.faqs__bg-image {
-    
-}
-
-.accordion {
-    cursor: pointer;
-    padding: 18px;
-    width: 100%;
-    text-align: left;
-    border: none;
-    outline: none;
-    transition: 0.4s;
-}
-
-
-.faq__heading {
-    font-size: 3.2rem;
-    line-height: 3.8rem;
-    color: var(--color-dark-blue);
-    font-weight: var(--weight-bold);
-}
-
-.question-title {
-    font-size: 1.3rem;
-    line-height: 1.6rem;
-    font-weight: var(--weight-regular);
-    color: var(--color-mid-dark-gray-blue);
-}
 /* Adds a background color to the button if it is clicked on when you hover (active class w/JS) */
 
 .active, .accordion:hover {

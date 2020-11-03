@@ -62,11 +62,32 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 4rem 2.4rem 8.5rem;
+    margin: auto;
     height: 100%;
 }
 
+.faq-container {
+    margin: auto;
+    min-width: 327px;
+    height: 530px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-white);
+}
 
+.accordion-container {
+    margin-top: 150px;
+}
+
+.accordion {
+    display: flex;
+    justify-content: center;
+    text-align: left;
+}
+
+.question-title {
+    font-size: 12px;
+}
 /* Adds a background color to the button if it is clicked on when you hover (active class w/JS) */
 
 .active, .accordion:hover {

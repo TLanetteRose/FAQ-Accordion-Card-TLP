@@ -55,24 +55,40 @@ body {
     font-size: 1.5rem;
     font-family: 'Kumbh Sans',
     sans-serif;
-    background: var(--bg-gradient);
+    background-image: var(--bg-gradient);
 }
 
 .main {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: auto;
+    padding: 4rem 2.4rem 8.5rem;
     height: 100%;
 }
 
+/* FAQ Section */
+
+.faq__heading {
+    font-size: 3.2rem;
+    line-height: 3.8rem;
+}
+
+
 .faq-container {
-    margin: auto;
-    min-width: 327px;
-    height: 530px;
+    height: 100%;
     display: flex;
-    flex-direction: column;
+    max-width: 56rem;
+    position: relative;
+    align-items: center;
+    flex-flow: column nowrap;
     background-color: var(--color-white);
+    box-shadow: 0 5rem 5rem -2rem rgba(53, 18, 122, 0.50);
+}
+
+
+.faqs__bg-image {
+    background-image: url("/images/bg-pattern-mobile.svg");
+    background-position-x: 67;
 }
 
 .accordion-container {
@@ -81,12 +97,16 @@ body {
 
 .accordion {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 25px;
     text-align: left;
 }
 
 .question-title {
-    font-size: 12px;
+    font-size: 1.3rem;
+    line-height: 1.6rem;
+
 }
 /* Adds a background color to the button if it is clicked on when you hover (active class w/JS) */
 
@@ -102,7 +122,12 @@ body {
     overflow: hidden;
 }
 
-
+.divider {
+    width: 100%;
+    height: 0.1rem;
+    background-color: var(--color-light-gray-blue);
+    margin: 1.7rem 0;
+}
 
 
 /* Footer */

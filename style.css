@@ -25,13 +25,49 @@
     /* Dividers */
     --color-light-gray-blue: hsl(240, 5%, 91%);
 
-   /* --transition: 300ms ease-in-out; */
+    --transition: 300ms ease-in-out; 
 }
 
-
+/* Condensed Universal Reset */
 * {
+    box-sizing: inherit;
+    vertical-align: baseline;
+    font-weight: inherit;
+    font-family: inherit;
+    font-size: 100%;
+    border: 0 none;
     outline: 1px solid black;
+    padding: 0; 
+    margin: 0;
 }
+
+/* Additional Reset */
+
+html {
+    box-sizing: border-box;
+    font-size: 1em;
+}
+
+html, body {
+    height: 100%; 
+}
+
+h1, 
+h2,
+h3,
+p {
+    margin: 0;
+}
+
+/* Style */
+
+body {
+    margin: 0;
+    font-size: 1.6rem;
+    font-family: 'Kumbh Sans', sans-serif;
+    background-image: var(--bg-gradient);
+}
+
 
 /* Footer */
 

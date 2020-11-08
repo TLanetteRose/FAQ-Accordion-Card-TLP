@@ -19,3 +19,5 @@ Your users should be able to:
 
 
 -using ::after to place images
+- used a CSS Reset, Condensed Universal Reset
+https://perishablepress.com/a-killer-collection-of-global-css-reset-styles/

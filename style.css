@@ -59,17 +59,43 @@ p {
     margin: 0;
 }
 
-/* Style */
+/* Page Style */
 
 body {
     margin: 0;
-    font-size: 1.6rem;
+    font-size: 1rem;
     font-family: 'Kumbh Sans', sans-serif;
     background-image: var(--bg-gradient);
 }
 
+.main {
+   height: 643px;
+   min-width: 327px;  
+}
+
+.faq {
+    height: 530px;
+    min-width: 327px;
+    margin: 147px 25px 0;
+    background-color: var(--color-white);
+}
+
 
 /* Footer */
+
+footer {
+    /*display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;*/
+    width: 100%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin-top: 4em;
+    padding: 20px;
+
+}
 
 .attribution {
     font-size: 11px;

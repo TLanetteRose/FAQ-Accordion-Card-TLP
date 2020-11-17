@@ -45,7 +45,7 @@
 
 html {
     box-sizing: border-box;
-    font-size: 1em;
+    font-size: 62.5%;
 }
 
 html, body {
@@ -61,7 +61,41 @@ p {
 
 /* Page Style */
 
+body {
+    font-family: 'Kumbh Sans',
+    sans-serif;
+    font-size: 1.6rem;
+    margin: 0;
+    background-image: var(--bg-gradient);
+}
 
+/* Main Styling */
+
+.main {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/* Section Styling */
+
+.faqs {
+    height: 100%;
+    display: flex;
+    max-width: 56rem;
+    position: relative;
+    align-items: center;
+    flex-flow: column nowrap;
+    box-shadow: 0 5rem 5rem -2rem rgba(53,18,122, 0.50);
+}
+
+.faqs::before {
+    z-index: 2;
+    
+}
+
+
+/* Footer */ 
 
 .attribution {
     font-size: 11px;

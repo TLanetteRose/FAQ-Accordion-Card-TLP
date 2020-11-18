@@ -89,10 +89,30 @@ body {
     box-shadow: 0 5rem 5rem -2rem rgba(53,18,122, 0.50);
 }
 
-.faqs::before {
-    z-index: 2;
-    
+.faqs__bg-image {
+    height: 18rem;
+    width: 23.7rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(./images/illustration-woman-online-mobile.svg);
 }
+
+/* Puts section with white background in front */
+.faqs::before {
+    content: '';
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    width: 100%;
+    top: 10.8rem;
+    position: absolute;
+    border-radius: 2.3rem;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-color: var(--color-white);
+    background-image: url(./images/bg-pattern-mobile.svg);
+}
+
 
 
 /* Footer */ 

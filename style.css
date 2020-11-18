@@ -97,7 +97,7 @@ body {
     background-image: url(./images/illustration-woman-online-mobile.svg);
 }
 
-/* Changes section into white area for faq information */
+/* Puts section with white background in front */
 .faqs::before {
     content: '';
     left: 0;

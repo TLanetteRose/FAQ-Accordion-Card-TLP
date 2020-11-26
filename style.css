@@ -40,6 +40,9 @@
     padding: 0; 
     margin: 0;
 }
+*::before, *::after {
+    box-sizing: inherit;
+}
 
 /* Additional Reset */
 
@@ -72,7 +75,8 @@ body {
 /* Main Styling */
 
 .main {
-    height: 100%;
+    height: 90%;
+    margin: 0 2.4rem;
     display: flex;
     justify-content: center;
 }
@@ -113,9 +117,98 @@ body {
     background-image: url(./images/bg-pattern-mobile.svg);
 }
 
+.faqs__container {
+    width: 100%;
+    margin-top: 6rem;
+    padding: 0 2.4rem;
+    overflow: hidden;
+}
 
+.faqs__heading {
+    text-align: center;
+    margin-bottom: 3.2rem;
+    font-size: 3.2rem;
+    font-weight: var(--weight-bold);
+    line-height: 3.8rem;
+    color: var(--color-dark-blue);
+}
+
+/* single faq element */
+.faqs__detail {
+    width: 100%;
+    cursor: pointer;
+}
+
+.faqs__question {
+    font-size: 1.3rem;
+    line-height: 1.6rem;
+    font-weight: var(--weight-regular);
+    color: var(--color-mid-dark-gray-blue);
+    outline: none;
+    transition: var(--transition);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Adds open-close arrow on question line */
+
+.faqs__question::after {
+    content: '';
+    width: 1rem;
+    height: .7rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(./images/icon-arrow-down.svg);
+}
+
+.faqs__detail:hover > .faqs__question {
+    color: var(--color-soft-red);
+}
+
+.faqs__detail[open] > .faqs__question {
+    color: var(--color-dark-blue);
+    font-weight: var(--weight-bold);
+}
+
+.faqs__detail[open] > .faqs__question::after {
+    transform: rotate(180deg);
+    margin-top: -0.5rem;
+}
+
+.faqs__detail[open] .faqs__question ~ * {
+    animation: fadein 0.5s ease-in-out;
+}
+
+.faqs__detail > .faqs__question::-webkit-details-marker {
+    display: none;
+}
+
+.faqs__answer {
+   margin-top: 1.2rem;
+   font-size: 1.2rem;
+   line-height: 1.8rem;
+   font-weight: var(--weight-regular);
+   color: var(--color-light-gray-blue);
+}
+
+@keyframes fadein {
+    0% {opacity: 0; transform: translateY(1rem);}
+    100% {opacity: 1; transform: translateY(0);}
+}
+
+.divider {
+    width: 100%;
+    height: .1rem;
+    background-color: var(--color-light-gray-blue);
+    margin: 1.7rem 0;
+}
 
 /* Footer */ 
+footer {
+    margin-top: 50px;
+    bottom: 0;
+}
 
 .attribution {
     font-size: 11px;
@@ -125,3 +218,7 @@ body {
 .attribution a {
     color: hsl(228, 45%, 44%);
 }
+
+
+/* Media Queries */
+

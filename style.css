@@ -76,7 +76,7 @@ body {
 
 .main {
     height: 90%;
-    min-width: 37.5rem;
+    /*min-width: 40rem; */
     margin: 0 2.4rem;
     display: flex;
     justify-content: center;
@@ -102,22 +102,74 @@ details[open] > summary::before {
 }
 
 /* Make our own arrow */
-details > summary::before {
+details > summary::after {
     content: '';
-    display: inline-block;
+    width: 1rem;
+    height: .7rem;
+    background-size: absolute;
+    background-repeat: no-repeat;
+    background-image: url(./images/icon-arrow-down.svg);
+
+    /* Arrow from two edges of a border */
+    /*display: inline-block;
     width: 0.5rem;
     height: 0.5rem;
     border: solid 2px black;
     border-left-color: transparent;
     border-bottom-color: transparent;
     margin-right: 0.6rem;
-    transform: rotate(-45deg);
+    transform: rotate(-45deg);*/
 }
 /* Section Styling */
 
-section .accordion {
+.accordion {
+    height: 85%;
+    display: flex;
+    max-width: 56rem;
+    position: relative;
+    align-items: center;
+    flex-flow: column nowrap;
 
 }
+
+.accordion__bg-image {
+    height: 18rem;
+    width: 23.7rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(./images/illustration-woman-online-mobile.svg);
+}
+
+.accordion__container {
+    width: 100%;
+    margin-top: 6rem;
+    padding: 0 2.4rem;
+    overflow: hidden;
+}
+
+.accordion__heading {
+    text-align: center;
+    margin-bottom: 3.2rem;
+    font-size: 3.2rem;
+    font-weight: var(--weight-bold);
+    line-height: 3.8rem;
+}
+
+.accordion::before {
+    content: '';
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    width: 100%;
+    top: 10.8rem;
+    position: absolute;
+    border-radius: 2.3rem;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-color: var(--color-white);
+    background-image: url(./images/bg-pattern-mobile.svg);
+}
+
 
 .divider {
     width: 100%;

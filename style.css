@@ -81,10 +81,42 @@ body {
     display: flex;
     justify-content: center;
 }
+
+/* Styling for accordion functionality */
+
+/* Hides the default arrow and remaining arrows */
+details > summary::webkit-details-marker {
+    display: none;
+}
+
+details >summary {
+    list-style: none;
+}
+
+details > summary:focus {
+    outline: none;
+}
+
+details[open] > summary::before {
+    transform: rotate(135deg);
+}
+
+/* Make our own arrow */
+details > summary::before {
+    content: '';
+    display: inline-block;
+    width: 0.5rem;
+    height: 0.5rem;
+    border: solid 2px black;
+    border-left-color: transparent;
+    border-bottom-color: transparent;
+    margin-right: 0.6rem;
+    transform: rotate(-45deg);
+}
 /* Section Styling */
 
 section .accordion {
-    
+
 }
 
 .divider {

@@ -76,8 +76,8 @@ body {
 
 .main {
     height: 90%;
-    /*min-width: 40rem; */
-    margin: 0 2.4rem;
+    min-width: 400px;
+    margin: 0 2.4rem; 
     display: flex;
     justify-content: center;
 }
@@ -89,11 +89,11 @@ details {
     cursor: pointer;
 }
 /* Hides the default arrow and remaining arrows */
-details > summary::webkit-details-marker {
+details > summary::-webkit-details-marker {
     display: none;
 }
 
-details >summary {
+details > summary {
     list-style: none;
 }
 
@@ -102,7 +102,7 @@ details > summary:focus {
 }
 
 details[open] > summary::after {
-    transform: rotate(180deg);
+    transform: rotate(180deg) translate(-20%, 20%);
 }
 
 /* Make our own arrow */
@@ -116,6 +116,7 @@ details > summary::after {
     margin-right: 0.6rem;
     transition: transform 0.2s;
     transform: rotate(0deg) translate(-20%, 20%);
+    
     /* Arrow from two edges of a border */
     /*display: inline-block;
     width: 0.5rem;
@@ -126,21 +127,39 @@ details > summary::after {
     margin-right: 0.6rem;
     transform: rotate(-45deg);*/
 }
+
 /* Section Styling */
 
 .accordion {
-    height: 85%;
+    height: 90%;
+    width: 100%;
+    /*min-width: 375px;*/
     display: flex;
-    max-width: 56rem;
     position: relative;
     align-items: center;
     flex-flow: column nowrap;
 
 }
 
+.accordion::before {
+    content: '';
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    width: 100%;
+    top: 10.8rem;
+    position: absolute;
+    border-radius: 2.3rem;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-color: var(--color-white);
+    background-image: url(./images/bg-pattern-mobile.svg);
+}
+
 .accordion__bg-image {
     height: 18rem;
     width: 23.7rem;
+    margin-top: 1rem;
     background-size: cover;
     background-repeat: no-repeat;
     background-image: url(./images/illustration-woman-online-mobile.svg);
@@ -159,21 +178,6 @@ details > summary::after {
     font-size: 3.2rem;
     font-weight: var(--weight-bold);
     line-height: 3.8rem;
-}
-
-.accordion::before {
-    content: '';
-    left: 0;
-    bottom: 0;
-    z-index: -1;
-    width: 100%;
-    top: 10.8rem;
-    position: absolute;
-    border-radius: 2.3rem;
-    background-repeat: no-repeat;
-    background-position: top center;
-    background-color: var(--color-white);
-    background-image: url(./images/bg-pattern-mobile.svg);
 }
 
 .accordion__question {
@@ -197,8 +201,7 @@ details > summary::after {
 
 /* Footer */ 
 footer {
-    margin-top: 50px;
-    bottom: 0;
+    
 }
 
 .attribution {

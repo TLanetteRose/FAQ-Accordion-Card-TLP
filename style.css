@@ -105,7 +105,6 @@ details[open] > summary::after {
     transform: rotate(180deg) translate(-20%, 20%);
 }
 
-/* Make our own arrow */
 details > summary::after {
     content: '';
     width: 1rem;
@@ -116,7 +115,7 @@ details > summary::after {
     margin-right: 0.6rem;
     transition: transform 0.2s;
     transform: rotate(0deg) translate(-20%, 20%);
-    
+    /* Make our own arrow */
     /* Arrow from two edges of a border */
     /*display: inline-block;
     width: 0.5rem;
@@ -128,10 +127,11 @@ details > summary::after {
     transform: rotate(-45deg);*/
 }
 
+
 /* Section Styling */
 
 .accordion {
-    height: 90%;
+    height: 80%;
     width: 100%;
     /*min-width: 375px;*/
     display: flex;
@@ -158,8 +158,9 @@ details > summary::after {
 
 .accordion__bg-image {
     height: 18rem;
-    width: 23.7rem;
-    margin-top: 1rem;
+    width: 26rem;
+    margin-top: 0.5rem;
+    margin-left: -2.5rem;
     background-size: cover;
     background-repeat: no-repeat;
     background-image: url(./images/illustration-woman-online-mobile.svg);
@@ -167,9 +168,13 @@ details > summary::after {
 
 .accordion__container {
     width: 100%;
-    margin-top: 6rem;
+    margin-top: 6.5rem;
     padding: 0 2.4rem;
     overflow: hidden;
+}
+
+.accordon__container:nth-child(2) {
+    
 }
 
 .accordion__heading {

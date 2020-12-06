@@ -25,7 +25,7 @@
     /* Dividers */
     --color-light-gray-blue: hsl(240, 5%, 91%);
 
-    --transition: 300ms ease-in-out; 
+    --transition: 500ms ease-in-out; 
 }
 
 /* Condensed Universal Reset */
@@ -99,13 +99,13 @@ details > summary {
 
 details > summary:focus {
     outline: none;
+    transition: var(--transition) font-weight;
 }
 
 details[open] > summary::after {
     transform: rotate(180deg) translate(-20%, 20%);
 }
 
-/* Make our own arrow */
 details > summary::after {
     content: '';
     width: 1rem;
@@ -116,7 +116,7 @@ details > summary::after {
     margin-right: 0.6rem;
     transition: transform 0.2s;
     transform: rotate(0deg) translate(-20%, 20%);
-    
+    /* Make our own arrow */
     /* Arrow from two edges of a border */
     /*display: inline-block;
     width: 0.5rem;
@@ -128,10 +128,14 @@ details > summary::after {
     transform: rotate(-45deg);*/
 }
 
+details:hover > .accordion__question {
+    font-weight: var(--weight-bold);
+}
+
 /* Section Styling */
 
 .accordion {
-    height: 90%;
+    height: 80%;
     width: 100%;
     /*min-width: 375px;*/
     display: flex;
@@ -158,8 +162,9 @@ details > summary::after {
 
 .accordion__bg-image {
     height: 18rem;
-    width: 23.7rem;
-    margin-top: 1rem;
+    width: 26rem;
+    margin-top: 0.5rem;
+    margin-left: -2.5rem;
     background-size: cover;
     background-repeat: no-repeat;
     background-image: url(./images/illustration-woman-online-mobile.svg);
@@ -167,7 +172,7 @@ details > summary::after {
 
 .accordion__container {
     width: 100%;
-    margin-top: 6rem;
+    margin-top: 6.5rem;
     padding: 0 2.4rem;
     overflow: hidden;
 }
@@ -192,6 +197,14 @@ details > summary::after {
     justify-content: space-between;
 }
 
+.accordion__answer {
+    font-size: 1.1rem;
+    font-weight: var(--weight-regular);
+    line-height: 1.6rem;
+    margin-top: 1rem;
+    color: var(--color-dark-gray-blue);
+}
+
 .divider {
     width: 100%;
     height: .1rem;
@@ -201,7 +214,12 @@ details > summary::after {
 
 /* Footer */ 
 footer {
-    
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 20px;
+    width: 100%;
+    height: 100px;
 }
 
 .attribution {

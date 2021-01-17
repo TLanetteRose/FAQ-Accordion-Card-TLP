@@ -23,5 +23,6 @@ Your users should be able to:
 https://perishablepress.com/a-killer-collection-of-global-css-reset-styles/
 
 https://dev.to/kallmanation/building-an-accordion-with-only-css-67h
+
 Learned to use <details> and <summary> to build the accordion; will style the arrow with animation
 no javascript

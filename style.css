@@ -69,7 +69,7 @@ body {
     sans-serif;
     font-size: 1.6rem;
     margin: 0;
-    background-image: var(--bg-gradient);
+    background: var(--bg-gradient);
 }
 
 /* Typography Styling */
@@ -83,19 +83,18 @@ body {
  .question {
      font-size: 1.3rem;
      font-weight: var(--weight-regular);
-     color: var(--color-mid-dark-gray-blue);
+     color: var(--color-dark-gray-blue);
      line-height: 1.6rem;
  }
 
  .answer {
      font-size: 1.2rem;
      font-weight: var(--weight-regular);
-     color: var(--color-light-gray-blue);
+     color: var(--color-mid-dark-gray-blue);
      line-height: 1.8rem;
  }
 
 /* Main Styling */
-
 .main {
     display: flex;
     justify-content: center;
@@ -103,33 +102,26 @@ body {
     padding: 4rem 2.4rem 8.5rem;
 }
 
-/* FAQ Section Styling */
-
 .faqs {
-    height: 100%;
-    display: flex;
-    max-width: 56rem;
-    position: relative;
-    align-items: center;
-    flex-flow: nowrap;
-    box-shadow: 0 5rem 5rem -2rem rgba(53,18,122,0.50);
+    min-width: 37.5rem;
+    height: 53rem;
+    margin-top: 15rem;
+}
+.
+
+
+
+
+
+
+details > summary {
+    cursor: pointer;
+    list-style: none;
 }
 
-.faqs::before {
-    content: "";
-    left: 0;
-    bottom: 0;
-    z-index: -1;
-    width: 100%;
-    top: 10.8rem;
-    position: absolute;
-    border-radius: 2.3rem;
-    background-repeat: no-repeat;
-    background-position: top center;
-    background-color: var(--color-white);
-    background-image: url(./images/bg-pattern-mobile.svg);
+details > summary::-webkit-details-marker {
+    display: none;
 }
-
 
 /* Footer */ 
 footer {

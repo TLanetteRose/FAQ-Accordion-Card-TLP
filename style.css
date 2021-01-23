@@ -96,18 +96,21 @@ body {
 
 /* Main Styling */
 .main {
+    height: 90%;
     display: flex;
     justify-content: center;
-    height: 90%;
     padding: 4rem 2.4rem 8.5rem;
 }
 
 .faqs {
-    min-width: 37.5rem;
-    height: 53rem;
-    margin-top: 15rem;
+    
+
+    
 }
-.
+
+.faqs__container {
+   
+}
 
 
 

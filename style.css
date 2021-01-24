@@ -97,11 +97,16 @@ body {
 /* Main Styling */
 .main {
     height: 90%;
+    max-width: 37.5rem;
     display: flex;
     justify-content: center;
+    margin: 20px auto;
     padding: 4rem 2.4rem 8.5rem;
 }
 
+.accordion__container {
+
+}
 
 
 
@@ -116,6 +121,10 @@ details > summary {
 
 details > summary::-webkit-details-marker {
     display: none;
+}
+
+details > summary:focus {
+    outline: none;
 }
 
 /* Footer */ 

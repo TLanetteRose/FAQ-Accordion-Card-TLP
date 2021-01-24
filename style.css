@@ -36,7 +36,7 @@
     font-family: inherit;
     font-size: 100%;
     border: 0 none;
-    outline: 1px solid black;
+    /*outline: 1px solid black;*/
     padding: 0; 
     margin: 0;
 }
@@ -78,16 +78,13 @@ body {
     font-weight: var(--weight-bold);
     color: var(--color-dark-blue);
     line-height: 3.8rem;
-    padding-bottom: 30px;
-    text-align: center;
  }
 
  .question {
      font-size: 1.3rem;
      font-weight: var(--weight-regular);
      color: var(--color-dark-gray-blue);
-     line-height: 1.6rem;
-     
+     line-height: 1.6rem;  
  }
 
  .answer {
@@ -108,13 +105,13 @@ body {
 }
 
 .accordion__container {
-    height: 58rem;
+    height: 56rem;
     width: 37.5rem;
     margin-top: 15rem;
     padding-top: 6.5rem;
     position: relative;
     display: flex;
-    justify-content: center;
+    justify-self: center;
     flex-flow: column nowrap;
     border-radius: 100px;
     
@@ -135,8 +132,20 @@ body {
     background-image: url(./images/bg-pattern-mobile.svg);
 }
 
+.fq-h2 {
+    text-align: center;
+    margin-top: 6.5rem;
+    margin-bottom: 2.2rem;
+}
 
+.fq-question {
+    transition: var(--transition) color;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 
+/* Details & Summary */
 
 details {
     margin: 20px;
@@ -149,12 +158,23 @@ details > summary {
     list-style: none;
 }
 
+/* remove the default triangle */
+
 details > summary::-webkit-details-marker {
     display: none;
 }
 
 details > summary:focus {
-   /* outline: none; */
+   outline: none; 
+}
+
+details[open] > .fq-question {
+    color: var(--color-dark-blue);
+    font-weight: var(--weight-bold);
+}
+
+details:hover > .fq-question {
+    color: var(--color-soft-red);
 }
 
 

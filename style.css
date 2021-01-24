@@ -78,6 +78,8 @@ body {
     font-weight: var(--weight-bold);
     color: var(--color-dark-blue);
     line-height: 3.8rem;
+    padding-bottom: 30px;
+    text-align: center;
  }
 
  .question {
@@ -85,6 +87,7 @@ body {
      font-weight: var(--weight-regular);
      color: var(--color-dark-gray-blue);
      line-height: 1.6rem;
+     
  }
 
  .answer {
@@ -97,23 +100,48 @@ body {
 /* Main Styling */
 .main {
     height: 90%;
+    max-width: 37.5rem;
     display: flex;
     justify-content: center;
+    margin: 20px auto;
     padding: 4rem 2.4rem 8.5rem;
 }
 
-.faqs {
-   
-
-}
-
-.faqs__container {
+.accordion__container {
+    height: 58rem;
+    width: 37.5rem;
+    margin-top: 15rem;
+    padding-top: 6.5rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-flow: column nowrap;
+    border-radius: 100px;
     
 }
 
+.accordion__container::before {
+    content: "";
+    left: 0;
+    bottom: 0;
+    top: 0;
+    z-index: -1;
+    width: 100%;
+    position: absolute;
+    border-radius: 2.3rem;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-color: var(--color-white);
+    background-image: url(./images/bg-pattern-mobile.svg);
+}
 
 
 
+
+details {
+    margin: 20px;
+    border-bottom: 2px solid var(--color-light-gray-blue);
+}
 
 
 details > summary {
@@ -124,6 +152,12 @@ details > summary {
 details > summary::-webkit-details-marker {
     display: none;
 }
+
+details > summary:focus {
+   /* outline: none; */
+}
+
+
 
 /* Footer */ 
 footer {

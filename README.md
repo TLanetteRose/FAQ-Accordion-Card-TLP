@@ -1,4 +1,4 @@
-# FAQ-Accordion-Card-TLP
+# FAQ-Accordion-Card-TLP (HTML & CSS)
 Frontend Mentor Challenge
 
 ![Design preview for the FAQ Accordion Card coding challenge](./design/desktop-preview.jpg)
@@ -24,5 +24,4 @@ https://perishablepress.com/a-killer-collection-of-global-css-reset-styles/
 
 https://dev.to/kallmanation/building-an-accordion-with-only-css-67h
 
-Learned to use <details> and <summary> to build the accordion; will style the arrow with animation
-no javascript
+Learned to use <details> and <summary> to build the accordion; 

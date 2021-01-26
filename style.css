@@ -136,14 +136,29 @@ body {
     background-image: url(./images/bg-pattern-mobile.svg);
 }
 
+
 .fq-h2 {
     margin-top: -40px;
     text-align: center;
 }
 
+.fq-question {
+    transition: var(--transition) color;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 0;
+}
 
+.fq-answer {
+    padding: 5px 10px 0 0;
+}
 
 /* Details & Summary */
+details {
+    margin: 0 25px;
+    border-bottom: 2px solid var(--color-light-gray-blue);
+}
 
 details > summary {
     cursor: pointer;
@@ -158,7 +173,11 @@ details > summary::webkit-details-marker {
 details > summary::after {
     content: "";
     width: 1rem;
-    height: 
+    height: .7rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: inline-block;
+    background-image: url(./images/icon-arrow-down.svg);
 }
 
 /* Footer */ 

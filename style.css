@@ -36,7 +36,7 @@
     font-family: inherit;
     font-size: 100%;
     border: 0 none;
-    outline: 1px solid black;
+    /*outline: 1px solid black; */
     padding: 0; 
     margin: 0;
 }
@@ -89,7 +89,7 @@ body {
      font-size: 1.3rem;
      font-weight: var(--weight-regular);
      color: var(--color-dark-gray-blue);
-     line-height: 1.6rem;  
+     line-height: 1.4rem;  
  }
 
  .answer {
@@ -136,9 +136,21 @@ body {
     background-image: url(./images/bg-pattern-mobile.svg);
 }
 
+.fq-image {
+    height: 18rem;
+    width: 26rem;
+    position: absolute;
+    top: 110px;
+    left: 80px;
+    z-index: 2;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(./images/illustration-woman-online-mobile.svg);
+}
 
 .fq-h2 {
-    margin-top: -40px;
+    margin-top: -50px;
+    margin-bottom: -15px;
     text-align: center;
 }
 
@@ -147,18 +159,20 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin: 10px 0;
     padding: 5px 0;
 }
 
 .fq-answer {
-    padding: 5px 10px 0 0;
+    padding: 5px 10px 10px 0;
 }
 
 /* Details & Summary */
 details {
-    margin: 0 25px;
+    margin: -20px 25px;
     border-bottom: 2px solid var(--color-light-gray-blue);
 }
+
 
 details > summary {
     cursor: pointer;

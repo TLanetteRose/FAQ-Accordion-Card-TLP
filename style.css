@@ -36,7 +36,7 @@
     font-family: inherit;
     font-size: 100%;
     border: 0 none;
-    /*outline: 1px solid black; */
+    outline: 1px solid black; 
     padding: 0; 
     margin: 0;
 }
@@ -103,7 +103,9 @@ body {
 .main {
     height: 90%;
     width: 37.5rem;
+    position: relative;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     margin: 20px auto;
     padding: 4rem 2.4rem 8.5rem;
@@ -139,10 +141,10 @@ body {
 .fq-image {
     height: 18rem;
     width: 26rem;
-    position: absolute;
-    top: 110px;
-    left: 80px;
     z-index: 2;
+    top: 100px;
+    left: 46px;
+    position: absolute;
     background-size: cover;
     background-repeat: no-repeat;
     background-image: url(./images/illustration-woman-online-mobile.svg);

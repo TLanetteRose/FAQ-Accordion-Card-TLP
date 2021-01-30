@@ -36,7 +36,7 @@
     font-family: inherit;
     font-size: 100%;
     border: 0 none;
-    /*outline: 1px solid black; */
+    outline: 1px solid black; 
     padding: 0; 
     margin: 0;
 }
@@ -111,6 +111,20 @@ body {
     padding: 4rem 2.4rem 8.5rem;
 }
 
+@media screen and (min-width: 1024px){
+    .main {
+        width: 91.8rem;
+        padding: 12.9rem 0 13rem;
+    }
+
+}
+
+.faqs {
+   height: 90%;
+   
+
+}
+
 .accordion__container {
     width: 32.7rem;
     height: 53rem;
@@ -121,8 +135,17 @@ body {
     justify-content: space-evenly;
     flex-flow: column nowrap;
     overflow: hidden;
-    box-shadow: 0 5rem 5rem -2rem rgba(53,18,122,0.50);
+    box-shadow: 0 5rem 5rem -2rem rgba(53, 18, 122, 0.50);
 }
+
+@media screen and (min-width: 1024px) {
+    .accordion__container {
+        max-width: 91.8rem;
+        max-height: 50.9rem;
+
+    }
+}
+
 
 .accordion__container::before {
     content: "";
@@ -177,17 +200,17 @@ details {
 }
 
 
-details > summary {
+details>summary {
     cursor: pointer;
     list-style: none;
 }
 
 /* Remove the default triangle */
-details > summary::webkit-details-marker {
+details>summary::webkit-details-marker {
     display: none;
 }
 
-details > summary::after {
+details>summary::after {
     content: "";
     width: 1rem;
     height: .7rem;
@@ -197,32 +220,32 @@ details > summary::after {
     background-image: url(./images/icon-arrow-down.svg);
 }
 
-details > summary:focus {
+details>summary:focus {
     outline: none;
 }
 
-details[open] > .fq-question {
+details[open]>.fq-question {
     color: var(--color-dark-blue);
     font-weight: var(--weight-bold);
 }
 
-details[open] > .fq-question::after {
+details[open]>.fq-question::after {
     transform: rotate(180deg);
     margin-top: -0.5rem;
 }
 
-details:hover > .fq-question {
+details:hover>.fq-question {
     color: var(--color-soft-red);
 }
 
-/* Footer */ 
+/* Footer */
 footer {
     left: 0;
     right: 0;
     bottom: 0;
     padding: 20px;
     width: 100%;
-    
+
 }
 
 .attribution {
@@ -236,4 +259,3 @@ footer {
 
 
 /* Media Queries */
-

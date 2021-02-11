@@ -72,8 +72,8 @@ body {
     sans-serif;
     font-size: 1.6rem;
     margin: 0;
-   /* background: var(--bg-gradient);
-    background-attachment: fixed; */
+    /*background: var(--bg-gradient);*/
+    background-attachment: fixed; 
     
 }
 
@@ -100,13 +100,34 @@ body {
  }
 
 /* Main Styling */
+.main {
+  height: 90%; 
+  position: relative; 
+}
 
+.accordion__container {
+    max-width: 400px;
+    margin: 150px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: var(--color-white);
+}
+
+.accordion__label, .accordion__content {
+    padding: 14px 20px;
+}
 
 /* Footer */
 footer {
     left: 0;
     right: 0;
     bottom: 0;
+    margin-top: -200px;
     padding: 20px;
     width: 100%;
 

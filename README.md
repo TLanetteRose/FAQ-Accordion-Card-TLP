@@ -24,7 +24,7 @@ https://perishablepress.com/a-killer-collection-of-global-css-reset-styles/
 
 https://dev.to/kallmanation/building-an-accordion-with-only-css-67h
 
-Learned to use <details> and <summary> to build the accordion; 
+Learned to use <details> and <summary> to build the accordion; Realized that it wasn't flexible enough for me and didn't truly help me understand how to build an accordion
 
 https://medium.com/@loginradius/a-simple-css3-accordion-tutorial-688df26eac6a
 Using input and label

@@ -47,14 +47,13 @@
 /* Additional Reset */
 
 html {
-    min-height: 100%;
     position: relative;
     box-sizing: border-box;
     font-size: 62.5%;
 }
 
 html, body {
-    height: 100%; 
+    min-height: 100%; 
     width: 100%;
 }
 
@@ -104,8 +103,10 @@ body {
 
 /* Main Styling */
 .main {
-  height: 90%; 
-  position: relative; 
+  height: 100%; 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .accordion__container {
@@ -121,7 +122,12 @@ body {
     border-radius: 15px;
     overflow: hidden;
     background-color: var(--color-white);
+    /*background-image: url(./images/bg-pattern-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: top;*/
 }
+
+
 
 .accordion__heading {
     text-align: center;
@@ -198,7 +204,7 @@ footer {
     left: 0;
     right: 0;
     bottom: 0;
-    margin-top: -200px;
+    margin-top: -100px;
     padding: 20px;
     width: 100%;
 

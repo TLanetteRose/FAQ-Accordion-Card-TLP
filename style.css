@@ -104,9 +104,10 @@ body {
 /* Main Styling */
 .main {
   height: 100%; 
+  margin-top: 50px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .accordion__container {
@@ -128,6 +129,9 @@ body {
 }
 
 
+.overflow-hidden {
+    display: none;
+}
 
 .accordion__heading {
     text-align: center;

@@ -28,3 +28,6 @@ Learned to use <details> and <summary> to build the accordion; Realized that it 
 
 https://medium.com/@loginradius/a-simple-css3-accordion-tutorial-688df26eac6a
 Using input and label
+
+https://supfort.com/font-awesome-accordion-arrow-css
+Referred to this website to put in my arrows. 

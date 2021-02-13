@@ -36,7 +36,7 @@
     font-family: inherit;
     font-size: 100%;
     border: 0 none;
-    outline: 1px solid black; 
+    /*outline: 1px solid black; */
     padding: 0; 
     margin: 0;
 }
@@ -86,10 +86,11 @@ body {
  }
 
  .question {
+     text-align: left;
      font-size: 1.3rem;
      font-weight: var(--weight-regular);
      color: var(--color-dark-gray-blue);
-     line-height: 1.4rem;  
+     line-height: 1rem;  
  }
 
  .answer {
@@ -106,7 +107,7 @@ body {
 }
 
 .accordion__container {
-    max-width: 330px;
+    max-width: 375px;
     min-height: 600px;
     margin: 150px auto;
     padding: 0 2.4rem;
@@ -123,16 +124,12 @@ body {
 .accordion__heading {
     text-align: center;
     margin-top: 100px;
-    padding: 10px 0;
+    padding: 20px 0;
 }
 
-.accordion__section {
-    /*padding: 0 20px;*/
-    /*border-bottom: 2px solid var(--color-light-gray-blue);*/
-}
 
 .accordion__label, .accordion__content {
-    padding: 14px 10px;
+    padding: 14px 5px;
 }
 
 .accordion__label {
@@ -143,7 +140,7 @@ body {
 }
 
 .accordion__content {
-    line-height: 1.6;
+    line-height: 1.4;
     display: none;
     /*border-bottom: 2px solid var(--color-light-gray-blue);*/
 }
@@ -157,10 +154,12 @@ body {
 }
 
 .divider {
-    width: 100%;
+    width: 90%;
     height: .1rem;
+    margin: 1rem 0.5rem;
+    padding-left: 50px;
     background-color: var(--color-light-gray-blue);
-    margin: 1.7rem 0;
+    
     
 } 
 

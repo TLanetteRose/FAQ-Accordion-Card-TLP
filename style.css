@@ -93,6 +93,8 @@ body {
      line-height: 1rem;  
  }
 
+
+
  .answer {
      font-size: 1.2rem;
      font-weight: var(--weight-regular);
@@ -155,10 +157,14 @@ input:checked + .accordion__label::after {
     margin-top: -0.5rem;
 }
 
+input:checked + .accordion__label {
+    color: var(--color-dark-blue);
+    font-weight: var(--weight-bold);
+}
+
 .accordion__content {
     line-height: 1.4;
     display: none;
-    /*border-bottom: 2px solid var(--color-light-gray-blue);*/
 }
 
 .accordion__input {
@@ -168,6 +174,16 @@ input:checked + .accordion__label::after {
 .accordion__input:checked ~ .accordion__content {
     display: block;
 }
+
+.accordion__label {
+    outline: none;
+    transition: var(--transition) color;
+}
+
+.accordion__panel:hover > .accordion__label {
+    color: var(--color-soft-red);
+}
+
 
 .divider {
     width: 95%;

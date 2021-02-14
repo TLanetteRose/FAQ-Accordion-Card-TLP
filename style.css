@@ -261,34 +261,33 @@ footer {
     .desktop-images {
         display: block;
         position: relative;
-        height: 600px;
-        width: 390px;
+        padding-left: 65px;
         z-index: 1;
     }
     .overflow-hidden {
         position: absolute;
         width: 500px;
         top: -60px;
-        left: 100px;
-        height: 600px;
+        left: 90px;
+        height: 720px;
+        margin: auto;
         overflow: hidden;
     }
     .woman-online-desktop {
-        left: ;
-        top: 200px;
-        position: absolute;
+       position: absolute;
+       width: 434px;
+       left: -20px;
+       top: 230px; 
     }
     .bg-pattern-desktop {
-        width: 700px;
-        bottom: -120px;
-        left: 60px;
-        right: 0;
         position: absolute;
+        width: 700px;
+        height: 830px;
+        left: -220px;
+        bottom: -100px;
     }
     .box-desktop {
-        position: absolute;
-        left: 300px;
-        top: 350px;
+        
     }
     .main {
         flex-direction: row;
@@ -300,6 +299,7 @@ footer {
     .accordion__container {
         max-width: 920px;
         min-height: 509px;
+        position: relative;
     }
     .accordion__panel, .divider, .accordion__heading {
         position: relative;

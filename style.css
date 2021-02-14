@@ -36,7 +36,7 @@
     font-family: inherit;
     font-size: 100%;
     border: 0 none;
-    /*outline: 1px solid black; */
+    outline: 1px solid black; 
     padding: 0; 
     margin: 0;
 }
@@ -104,7 +104,7 @@ body {
 /* Main Styling */
 .main {
   height: 100%; 
-  margin-top: 50px;
+  margin-top: 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -119,15 +119,14 @@ body {
 
 .accordion__container {
     max-width: 330px;
-    min-height: 530px;
+    min-height: 550px;
     margin: 140px auto;
     padding: 0 2.4rem;
     position: relative;
-    z-index: -1;
+    /*z-index: -1;*/
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /*align-items: center;*/
     box-shadow: 0 5rem 5rem -2rem rgba(53,18,122,0.50);
     border-radius: 2.3rem;
     overflow: hidden;
@@ -138,19 +137,20 @@ body {
     position: relative;
     top: -70px;
     height: 100px;
+    z-index: 1;
 }
 
 .bg-pattern-mobile {
     position: absolute;
-    left: 10px;
+    left: 0px;
     right: 0px;
-    top: 320px;
+    top: 310px;
     margin: 0 auto;
 }
 
 .woman-online-mobile {
     position: absolute;
-    top: 210px;
+    top: 200px;
     left: -25px;
     right: 0px;
     margin: 0 auto;
@@ -175,7 +175,6 @@ body {
     display: block;
     position: relative;
     cursor: pointer;
-    /*border-bottom: 2px solid var(--color-light-gray-blue);*/
 }
 
 .accordion__label::after {
@@ -253,19 +252,3 @@ footer {
 
 
 /* Media Queries */
-
-@media (min-width: 1024px) {
-    .accordion__container {
-        max-width: 920px;
-    }
-    
-    
-    .mobile-images {
-        display: none;
-    }
-
-    .desktop-images {
-      display: block;
-      position: relative;  
-    }
-}

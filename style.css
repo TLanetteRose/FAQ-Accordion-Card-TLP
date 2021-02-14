@@ -260,45 +260,48 @@ footer {
     }
     .desktop-images {
         display: block;
-        position: relative;
-        padding-left: 65px;
+        position: absolute;
         z-index: 1;
+        left: 320px;
+        
     }
     .overflow-hidden {
         position: absolute;
-        width: 500px;
-        top: -60px;
-        left: 90px;
-        height: 720px;
-        margin: auto;
         overflow: hidden;
+        width: 500px;
+        height: 600px; 
+        top: 30px;
+        
     }
     .woman-online-desktop {
        position: absolute;
-       width: 434px;
-       left: -20px;
-       top: 230px; 
+       left: -90px;
+       top: 120px;
+
+      
     }
     .bg-pattern-desktop {
-        position: absolute;
-        width: 700px;
-        height: 830px;
-        left: -220px;
-        bottom: -100px;
+       position: absolute;
+       width: 770px;
+       top: -130px;
+       left: -390px;
+      
     }
     .box-desktop {
-        
+        position: absolute;
+        top: 40px;
     }
     .main {
         flex-direction: row;
-        justify-content: center;
+        
     }
     .accordion {
         width: 920px;
     }
     .accordion__container {
-        max-width: 920px;
+        min-width: 920px;
         min-height: 509px;
+        margin: 100px auto;
         position: relative;
     }
     .accordion__panel, .divider, .accordion__heading {
@@ -309,7 +312,11 @@ footer {
     }
     .accordion__heading {
         text-align: left;
-        font-weight: var(--weight-regular);
+        font-weight: var(--weight-bold);
+        margin-top: -20px;
+    }
+    footer {
+        margin-top: 100px;
     }
 
 }

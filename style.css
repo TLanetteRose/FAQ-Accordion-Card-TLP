@@ -36,7 +36,7 @@
     font-family: inherit;
     font-size: 100%;
     border: 0 none;
-    outline: 1px solid black; 
+    /*outline: 1px solid black; */
     padding: 0; 
     margin: 0;
 }
@@ -112,10 +112,11 @@ body {
 
 .accordion {
     /*background-color: var(--color-white);
-    max-width: 375px;
+     max-width: 375px; 
     max-height: 800px;
     margin: 20px 20px 150px 20px;
     */
+   
     
 }
 
@@ -132,7 +133,7 @@ body {
     box-shadow: 0 5rem 5rem -2rem rgba(53,18,122,0.50);
     border-radius: 2.3rem;
     overflow: hidden;
-    background-color: var(--color-white);
+    background-color: var(--color-white); 
 }
 
 .mobile-images {
@@ -243,7 +244,7 @@ footer {
 }
 
 .attribution {
-    font-size: 11px;
+    font-size: 14px;
     text-align: center;
     color: var(--color-light-gray-blue);
 }
@@ -260,47 +261,52 @@ footer {
     }
     .desktop-images {
         display: block;
-        position: absolute;
+        position: relative;
         z-index: 1;
-        left: 320px;
+        left: 2px;
+        right: 0px;
         
     }
     .overflow-hidden {
         position: absolute;
         overflow: hidden;
         width: 500px;
-        height: 600px; 
+        height: 700px; 
         top: 30px;
-        
+        left: 0px;
+        right: 0px;
     }
     .woman-online-desktop {
        position: absolute;
-       left: -90px;
-       top: 120px;
-
-      
+       width: 500px;
+       left: -100px;
+       top: 90px;
+       right: 0px; 
     }
     .bg-pattern-desktop {
        position: absolute;
-       width: 770px;
-       top: -130px;
-       left: -390px;
+       width: 800px;
+       top: -140px;
+       left: -395px;
+       right: 0px;
       
     }
     .box-desktop {
         position: absolute;
-        top: 40px;
+        top: 260px;
+        left: -100px;
     }
     .main {
         flex-direction: row;
+        margin-top: 30px;
         
     }
     .accordion {
         width: 920px;
     }
     .accordion__container {
-        min-width: 920px;
-        min-height: 509px;
+        min-width: 910px;
+        min-height: 490px;
         margin: 100px auto;
         position: relative;
     }
@@ -314,6 +320,12 @@ footer {
         text-align: left;
         font-weight: var(--weight-bold);
         margin-top: -20px;
+    }
+    .question {
+        font-size: 1.5rem;
+    }
+    .answer {
+        font-size: 1.3rem;
     }
     footer {
         margin-top: 100px;

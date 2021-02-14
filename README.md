@@ -31,3 +31,5 @@ Using input and label
 
 https://supfort.com/font-awesome-accordion-arrow-css
 Referred to this website to put in my arrows. 
+
+Positioning is still a work in progress. I learned that setting  one position to 0 will keep it from moving when you resize the page. I get  it now. right: 0;

@@ -99,3 +99,30 @@ How many team members can I invite?
 
   Do you provide additional support?
   Chat and email support is available 24/7. Phone lines are open during normal business hours.
+
+
+
+
+  <div class="accordion__images">
+      <div class="inner">
+        <picture>
+          <source srcset="./images/illustration-woman-online-mobile.svg" media="(max-width:898px)">
+            <img src="./images//illustration-woman-online-desktop.svg" alt="woman online illustration">
+        </picture>
+
+        <picture>
+          <source srcset="./images/bg-pattern-mobile.svg" media="(max-width:898px)">
+            <img class="secondary-image" src="./images/bg-pattern-desktop.svg" alt="desktop-background">
+        </picture>
+      </div><!-- .inner -->
+      <div class="outer">
+        <img src="./images/illustration-box-desktop.svg" alt="orange box icon">
+      </div>
+    </div><!-- .accordion__images -->
+
+    .accordion__images {
+    position: relative;
+    padding: 0;
+    margin: 0 auto;
+    margin-top: -110px;
+}

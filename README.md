@@ -16,10 +16,14 @@ Your users should be able to:
 - Hide/Show the answer to a question when the question is clicked
 
 ## Background
-This challenge tested my comfort level with positioning in CSS. My goal was to complete the challenge using only HTML and CSS. First I learned about using the `<details>` and `<summary>` HTML elements to build the accordion. Realized that it wasn't flexible enough for me and didn't truly help me understand how to build an accordion. 
+This challenge tested my comfort level with positioning in CSS. My goal was to complete the challenge using only HTML and CSS. First I learned about using the `<details>` and `<summary>` HTML elements to build the accordion. I realized that it wasn't flexible enough for me and didn't truly help me understand how to build an accordion. 
 
-Then I found a tutorial that used `<input>` and `<label>` for the accordion 
+Then I found a tutorial that used `<input>` and `<label>` for the accordion features. When used this method, I was able to understand the basics for designing an accordion. 
 
+### Other Topics I Learned
+- Positioning is still a work in progress for me. I thought I had a strong understanding of moving an element **right**, **left**, **top**, and **bottom**. Everytime I scrolled on the page, my images would not move with the main element. 
+
+I learned that setting  one position to 0 will keep it from moving when you resize the page. I get it now. right: 0;
 ## Completed Design
 
 ## Attribution 
@@ -44,4 +48,4 @@ Using input and label
 https://supfort.com/font-awesome-accordion-arrow-css
 Referred to this website to put in my arrows. 
 
-Positioning is still a work in progress. I learned that setting  one position to 0 will keep it from moving when you resize the page. I get  it now. right: 0;
+P

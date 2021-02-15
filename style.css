@@ -294,7 +294,7 @@ footer {
     .box-desktop {
         position: absolute;
         top: 260px;
-        left: -100px;
+        left: -96px;
     }
     .main {
         flex-direction: row;

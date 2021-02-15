@@ -16,7 +16,9 @@ Your users should be able to:
 - Hide/Show the answer to a question when the question is clicked
 
 ## Background
-This challenge tested my comfort level with positioning in CSS. My goal was to complete the challenge using only HTML and CSS. First I learned about using the <details> and <summary> HTML elements to build the accordion. Realized that it wasn't flexible enough for me and didn't truly help me understand how to build an accordion
+This challenge tested my comfort level with positioning in CSS. My goal was to complete the challenge using only HTML and CSS. First I learned about using the `<details>` and `<summary>` HTML elements to build the accordion. Realized that it wasn't flexible enough for me and didn't truly help me understand how to build an accordion. 
+
+Then I found a tutorial that used `<input>` and `<label>` for the accordion 
 
 ## Completed Design
 

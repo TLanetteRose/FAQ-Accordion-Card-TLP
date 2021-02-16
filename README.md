@@ -25,6 +25,7 @@ I also used a global CSS Reset so that my page would be uniform across multiple 
 - I learned more about using  pseudocodes `::before` and `::after`. In my first accordion CSS code, I used `::before` to place background color on top of section. In my final CSS, I only used the `::after` pseudocode to place the arrow icon images on my accordion panels. 
 ## Completed Design
 You can see my final design here [FAQ Accordion Card](https://faq-accordion-card-tlp-kr5ldmspa.vercel.app)
+
 Designer: [T.Lanette Pollard](https://github.com/TLanetteRose)
 ## Attribution 
 Challenge by [Frontend Mentor](https://www.frontendmentor.io/challenges)

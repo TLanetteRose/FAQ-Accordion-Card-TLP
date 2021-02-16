@@ -24,17 +24,17 @@ I also used a global CSS Reset so that my page would be uniform across multiple 
 - Positioning my images and elements was still a work in progress for me. I thought I had a strong understanding of moving an element **right**, **left**, **top**, and **bottom**. Everytime I scrolled on the page, my images would not stay positioned within the paretn element. After some research and experimentation, I gained a better understanding of when to apply `right: 0px` or `left: 0px`. 
 - I learned more about using  pseudocodes `::before` and `::after`. In my first accordion CSS code, I used `::before` to place background color on top of section. In my final CSS, I only used the `::after` pseudocode to place the arrow icon images on my accordion panels. 
 ## Completed Design
-
+You can see my final design here [FAQ Accordion Card]()
+Designer: [T.Lanette Pollard](https://github.com/TLanetteRose)
 ## Attribution 
+Challenge by [Frontend Mentor](https://www.frontendmentor.io/challenges)
 - [A Simple CSS3 Accordion Tutorial](https://perishablepress.com/a-killer-collection-of-global-css-reset-styles/) by @loginradius: I referred to this tutorial to design my accordion.
 - [Font Awesome Accordion Arrow CSS](https://supfort.com/font-awesome-accordion-arrow-css): I used this website to review how to add my arrows to the accordion panels. 
 
 
-https://dev.to/kallmanation/building-an-accordion-with-only-css-67h
 
 
 
 
 
 
-P
